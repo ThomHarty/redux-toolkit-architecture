@@ -6,13 +6,14 @@ import { listProducts } from "../store/products";
 
 export const ListProducts = (): ReactElement => {
     const dispatch = useAppDispatch();
-    const { products } = useAppSelector(state => state.products);
+    const { products, loading } = useAppSelector(state => state.products);
 
     useEffect(() => {
         dispatch(listProducts());
     }, []);
 
-    console.log(products);
+    console.log("list products loading: ", loading);
+    console.log("list products: ", products);
 
     return <View />;
 };
