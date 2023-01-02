@@ -1,1 +1,1 @@
-export const ENDPOINT = "https://fakestoreapi.com/";
+export const ENDPOINT = "https://fakestoreapi.com";
