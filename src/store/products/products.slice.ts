@@ -5,6 +5,7 @@ import { createProductBuilder } from "./createProduct/createProduct.builder";
 import { getProductBuilder } from "./getProduct/getProduct.builder";
 import { listProductsBuilder } from "./listProducts/listProducts.builder";
 import { updateProductBuilder } from "./updateProduct/updateProduct.builder";
+import { deleteProductBuilder } from "./deleteProduct/deleteProduct.builder";
 
 export const productsSlice = createSlice({
     name: "products",
@@ -15,6 +16,7 @@ export const productsSlice = createSlice({
         getProductBuilder(builder);
         createProductBuilder(builder);
         updateProductBuilder(builder);
+        deleteProductBuilder(builder);
     },
 });
 
