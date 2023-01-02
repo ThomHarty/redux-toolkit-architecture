@@ -9,6 +9,5 @@ export const fetchListProducts = async (): Promise<ListProductsResponse> => {
         throw new Error(message);
     };
 
-    const data = await response.json();
-    return data;
+    return await response.json();
 };
