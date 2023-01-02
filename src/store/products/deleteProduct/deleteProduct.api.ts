@@ -6,10 +6,6 @@ export const fetchDeleteProduct = async (
 ): Promise<DeleteProductResponse> => {
     const response = await fetch(`${ENDPOINT}/products/${deleteProductRequest.params.id}`, {
         method: "DELETE",
-        headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json"
-        },
     });
 
     if(!response.ok) {
