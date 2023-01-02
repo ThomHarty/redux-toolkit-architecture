@@ -5,7 +5,7 @@ import { UpdateProductRequest, UpdateProductResponse } from "./updateProduct.typ
 
 export const updateProduct = createAsyncThunk(
     "product/updateProduct",
-    async (updateProductRequest: UpdateProductRequest,): Promise<UpdateProductResponse> => {
+    async (updateProductRequest: UpdateProductRequest): Promise<UpdateProductResponse> => {
         return await fetchUpdateProduct(updateProductRequest);
     },
 );

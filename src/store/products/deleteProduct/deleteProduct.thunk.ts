@@ -5,7 +5,7 @@ import { DeleteProductRequest, DeleteProductResponse } from "./deleteProduct.typ
 
 export const deleteProduct = createAsyncThunk(
     "product/deleteProduct",
-    async (deleteProductRequest: DeleteProductRequest,): Promise<DeleteProductResponse> => {
+    async (deleteProductRequest: DeleteProductRequest): Promise<DeleteProductResponse> => {
         return await fetchDeleteProduct(deleteProductRequest);
     },
 );
