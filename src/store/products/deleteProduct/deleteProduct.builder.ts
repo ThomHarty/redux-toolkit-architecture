@@ -17,6 +17,7 @@ export const deleteProductBuilder = (
         state,
         action: PayloadAction<DeleteProductResponse>
     ) => {
+        console.log("here")
         state.loading = false;
         state.products = state.products.filter((product) => product.id !== action.payload.id);
     });

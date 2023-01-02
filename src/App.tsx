@@ -6,6 +6,7 @@ import { ListProducts } from "./components/ListProducts";
 import { GetProduct } from "./components/GetProduct";
 import { CreateProduct } from "./components/CreateProduct";
 import { UpdateProduct } from "./components/UpdateProduct";
+import { DeleteProduct } from "./components/DeleteProduct";
 
 export const App = (): ReactElement => {
   return (
@@ -13,7 +14,8 @@ export const App = (): ReactElement => {
       {/* <ListProducts /> */}
       {/* <GetProduct /> */}
       {/* <CreateProduct /> */}
-      <UpdateProduct />
+      {/* <UpdateProduct /> */}
+      <DeleteProduct />
     </Provider>
   );
 };
