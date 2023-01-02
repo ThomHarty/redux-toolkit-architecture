@@ -6,5 +6,4 @@ export interface GetProductRequest {
     };
 };
 
-
 export type GetProductResponse = IProduct;
