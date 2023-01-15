@@ -1,12 +1,12 @@
-import React, { ReactElement } from "react";
-import { Provider } from "react-redux";
+import React, {ReactElement} from 'react';
+import {Provider} from 'react-redux';
 
-import { store } from "./store";
-import { ListProducts } from "./components/ListProducts";
-import { GetProduct } from "./components/GetProduct";
-import { CreateProduct } from "./components/CreateProduct";
-import { UpdateProduct } from "./components/UpdateProduct";
-import { DeleteProduct } from "./components/DeleteProduct";
+import {store} from './store';
+// import {ListProducts} from './components/ListProducts';
+// import {GetProduct} from './components/GetProduct';
+// import {CreateProduct} from './components/CreateProduct';
+// import {UpdateProduct} from './components/UpdateProduct';
+import {DeleteProduct} from './components/DeleteProduct';
 
 export const App = (): ReactElement => {
   return (

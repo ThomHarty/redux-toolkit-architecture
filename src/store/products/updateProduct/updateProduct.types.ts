@@ -1,8 +1,8 @@
-import { IProduct } from "../products.types";
+import {IProduct} from '../products.types';
 
 export interface UpdateProductRequest {
-    body: Omit<IProduct, "id">;
-    params: { id: number; };
-};
+  body: Omit<IProduct, 'id'>;
+  params: {id: number};
+}
 
 export type UpdateProductResponse = IProduct;

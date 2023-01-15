@@ -1,7 +1,7 @@
-import { IProductsState } from "./products.types";
+import {IProductsState} from './products.types';
 
 export const initialState: IProductsState = {
-    loading: false,
-    products: [],
-    current: null,
+  loading: false,
+  products: [],
+  current: null,
 };
